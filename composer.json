@@ -1,0 +1,48 @@
+{
+  "name": "mitchellholzmann/whatsawhizzer",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "The base theme for Whatsawhizzer Web Novels",
+  "homepage": "https://whatsawhizzerwebnovels.com",
+  "authors": [
+    {
+      "name": "Mitchell Holzmann",
+      "email": "mitchell@xevon.in",
+      "homepage": "https://xevon.in"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "php": "^7.4|^8.0",
+    "log1x/sage-directives": "^1.1"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "lint": [
+      "phpcs --extensions=php --standard=PSR12 app"
+    ]
+  },
+  "extra": {
+    "acorn": {
+      "providers": [
+        "App\\Providers\\ThemeServiceProvider"
+      ]
+    }
+  }
+}

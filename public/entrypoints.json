@@ -1,0 +1,19 @@
+{
+  "app": {
+    "js": [
+      "scripts/app.js"
+    ],
+    "css": [
+      "styles/app.css"
+    ],
+    "dependencies": []
+  },
+  "editor": {
+    "js": [
+      "editor.js"
+    ],
+    "dependencies": [
+      "wp-blocks"
+    ]
+  }
+}
